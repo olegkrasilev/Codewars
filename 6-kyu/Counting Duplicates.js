@@ -1,4 +1,4 @@
-// https://www.codewars.com/kata/54bf1c2cd5b56cc47f0007a1/train/javascript
+// https://www.codewars.com/kata/54bf1c2cd5b56cc47f0007a1
 const duplicateCount = text => {
 	let count = 0;
 	const stringToArray = text.toLowerCase().split('');

@@ -10,19 +10,16 @@
 // cakes({apples: 3, flour: 300, sugar: 150, milk: 100, oil: 100}, {sugar: 500, flour: 2000, milk: 2000});
 
 function cakes(recipe, available) {
-
   const amountOfBakering = {};
-    for (const key in recipe) {
-        amountOfBakering[key] = Math.trunc(available[key] / recipe[key])
+  for (const key in recipe) {
+    amountOfBakering[key] = Math.trunc(available[key] / recipe[key]);
   }
 
-  let result = Object.values(amountOfBakering)
+  const result = Object.values(amountOfBakering);
 
-
-  if(Number.isNaN(Math.min(...result))) {
-    return 0
+  if (Number.isNaN(Math.min(...result))) {
+    return 0;
   }
 
-  return Math.min(...result)
-
+  return Math.min(...result);
 }
